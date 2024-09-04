@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Guess the Number</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Guess the Number Game!</h1>
+        <p>Are you ready to test your guessing skills? Click the button below to start the game!</p>
+        <a href="{% url 'guess' %}" class="start-button">Go to the game</a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Guess the Number Game. All rights reserved.</p>
+            <p>Developed by Aybike Dalbul</p>
+            <p>
+                <a href="https://github.com/yourusername/guess_the_number" target="_blank">Project GitHub</a> | 
+                <a href="https://github.com/aybikedalbul" target="_blank">My GitHub</a>
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
